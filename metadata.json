@@ -1,0 +1,6 @@
+{
+  "name": "مطعم الروزنة الفاخر",
+  "description": "تجربة طهي فاخرة مستوحاة من التراث العربي العريق ممزوجة بلمسة عصرية مبتكرة مع حجز طاولات تفاعلي.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

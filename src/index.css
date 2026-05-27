@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Tajawal", "Inter", sans-serif;
+  --color-primary: #D4AF37; /* Gold */
+  --color-primary-hover: #C59B27; /* Darker Gold */
+  --color-burgundy: #58181A; /* Luxurious Burgundy Wine / Pomegranate */
+  --color-espresso: #211510; /* Dark Premium Espresso */
+  --color-sand: #FAF5EF; /* Sand/Cream */
+  --color-sand-dark: #EADEC9; /* Darker Sand */
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  body {
+    background-color: #0c0a09; /* Dark warm stone */
+    color: #FAF5EF; /* Sand/Cream text */
+    direction: rtl; /* Force RTL direction */
+  }
+
+  /* Custom Scrollbar for Luxury feeling */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #14110f;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #D4AF37;
+    border-radius: 3px;
+  }
+}
+
+/* Elegant radial background pattern to mimic fine dining velvet/silk texture without living souls */
+.bg-luxury-pattern {
+  background-color: #0c0a09;
+  background-image: radial-gradient(circle at 1px 1px, #1c1511 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Gold gradient highlight */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FFF9E6 0%, #D4AF37 50%, #AA7C11 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-gold-gradient {
+  background: linear-gradient(135deg, #D4AF37, #AA7C11);
+}
+
+/* Smooth active focus tabs */
+.shadow-gold-glow {
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+}
+
+.shadow-gold-glow-lg {
+  box-shadow: 0 4px 25px rgba(212, 175, 55, 0.25);
+}
